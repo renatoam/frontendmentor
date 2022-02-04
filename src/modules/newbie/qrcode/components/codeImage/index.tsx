@@ -1,8 +1,9 @@
 import Image from "../../../../../common/components/atoms/image";
+import styles from './styles.module.css'
 
-const CUSTOM_WIDTH = 50
-const CUSTOM_HEIGHT = 50
-const CUSTOM_LAYOUT = 'responsive'
+const CUSTOM_WIDTH = undefined
+const CUSTOM_HEIGHT = undefined
+const CUSTOM_LAYOUT = 'fill'
 
 interface ICodeImageProps {
   src: string
@@ -17,6 +18,15 @@ export default function CodeImage(props: ICodeImageProps) {
   const layout = CUSTOM_LAYOUT
 
   return (
-    <Image src={src} height={height} width={width} layout={layout} alt={alt} />
+    <figure className={styles.image}>
+      <Image
+        src={src}
+        height={height}
+        width={width}
+        layout={layout}
+        alt={alt}
+        priority
+      />
+    </figure>
   )
 }

@@ -1,0 +1,8 @@
+.text {
+  color: hsl(220, 15%, 55%);
+  font-family: Outfit, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
