@@ -1,0 +1,22 @@
+# To implement
+
+Geral:
+  ☐ to abstract custom fonts to a component and import that component to apply everywhere (custom doc)
+
+Back-End:
+  ☐ to create API routes to get the content
+  ☐ to connect with github api to get the dev profile
+
+State:
+  ☐ to use redux to manage shared data
+  ☐ to use context + compound components to hold local state
+
+Testing:
+  ☐ to configure jest and ts-jest
+  ☐ to configure react-testing-library
+  ☐ to configure cypress
+
+Translation:
+  ☐ create a translation strategy
+  ☐ to configure i18next
+  ☐ create namespaces
