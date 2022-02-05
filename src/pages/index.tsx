@@ -1,13 +1,13 @@
-import styles from '../styles/home.module.css'
+import styles from "../styles/home.module.css";
 
 export function getServerSideProps() {
   return {
     props: {
-      test: 'Bakareeeeee'
-    }
-  }
+      test: "Bakareeeeee",
+    },
+  };
 }
 
-export default function HomePage({ test }) {
-  return <div className={styles.text}>{test}</div>
+export default function HomePage({ test }: { test: string }) {
+  return <div className={styles.text}>{test}</div>;
 }
