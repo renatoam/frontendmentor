@@ -1,3 +1,30 @@
-.text {
-  font-size: 1.6rem;
+.wrapper {
+  /* TODO: usar grid com auto layout e remove tamanho do card*/
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 1rem;
+  width: 80%;
+}
+
+.card {
+  background-color: aliceblue;
+  border: 1px solid rgb(180, 190, 200);
+  border-radius: 1rem;
+  color: gray;
+  height: 25rem;
+  padding: 1rem;
+  width: 20rem;
+}
+
+.image {
+  border-radius: 0.5rem;
+  height: 10rem;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.image img {
+  object-fit: contain;
 }
