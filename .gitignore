@@ -63,6 +63,9 @@ typings/
 # Next.js build output
 .next
 
+# tests
+**/__snapshots__
+
 # Personal
 docs
 
