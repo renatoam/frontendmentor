@@ -1,3 +1,6 @@
-export default function NFTTitle() {
-  return <h1>Title</h1>
+import styles from "./styles.module.css";
+import { ChildrenType } from "../../../../../common/types/reactTypes";
+
+export default function NFTTitle({ children }: ChildrenType) {
+  return <h2 className={styles.title}>{children}</h2>;
 }

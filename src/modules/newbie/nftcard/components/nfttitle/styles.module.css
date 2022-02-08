@@ -1,0 +1,8 @@
+.title {
+  color: hsl(0, 0%, 100%);
+  font-family: Outfit, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  padding: 2rem 1rem;
+  text-align: center;
+}

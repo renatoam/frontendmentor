@@ -1,3 +1,6 @@
-export default function NFTText() {
-  return <h1>Text</h1>
+import { ChildrenType } from "../../../../../common/types/reactTypes";
+import styles from "./styles.module.css";
+
+export default function NFTText({ children }: ChildrenType) {
+  return <p className={styles.text}>{children}</p>;
 }

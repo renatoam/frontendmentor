@@ -1,0 +1,19 @@
+.image {
+  border-radius: 2rem;
+  height: 30rem;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  .image {
+    height: 35rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .image {
+    height: 31rem;
+  }
+}
