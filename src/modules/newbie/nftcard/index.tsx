@@ -1,3 +1,12 @@
+import NFT from "./components/nftwrapper";
+
 export default function NFTCard() {
-  return <h1>NFT card</h1>
+  return (
+    <NFT>
+      <NFT.Image />
+      <NFT.Title />
+      <NFT.Text />
+      <NFT.Info />
+    </NFT>
+  );
 }
