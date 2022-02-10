@@ -1,12 +1,35 @@
 .info {
+  display: flex;
+  justify-content: space-between;
   padding: 1rem 0;
 }
 
+.icon {
+  height: 2rem;
+  position: relative;
+  width: 1.2rem;
+}
+
+.time .icon {
+  width: 2rem;
+}
+
 .value {
+  align-items: center;
   color: hsl(178, 100%, 50%);
+  display: flex;
+  font-family: Outfit, sans-serif;
+  font-size: 2rem;
   font-weight: 600;
+  gap: 1rem;
 }
 
 .time {
+  align-items: center;
   color: hsl(215, 51%, 70%);
+  display: flex;
+  font-family: Outfit, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  gap: 1rem;
 }

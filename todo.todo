@@ -1,7 +1,7 @@
 # To implement
 
 Geral:
-  ☐ to abstract custom fonts to a component and import that component to apply everywhere (custom doc)
+  ✔ to abstract custom fonts to a component and import that component to apply everywhere (custom doc) @done(22-02-10 08:43)
 
 Back-End:
   ☐ to create API routes to get the content

@@ -1,3 +1,4 @@
+import Divider from "../../../common/components/atoms/divider";
 import NFT from "./components/nftwrapper";
 
 export default function NFTCard() {
@@ -7,6 +8,8 @@ export default function NFTCard() {
       <NFT.Title />
       <NFT.Text />
       <NFT.Info />
+      <Divider />
+      <NFT.Author />
     </NFT>
   );
 }

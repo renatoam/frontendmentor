@@ -1,0 +1,6 @@
+.divider {
+  background-color: hsl(215, 32%, 27%);
+  height: 1px;
+  margin: 1rem 0;
+  width: 100%;
+}
