@@ -25,4 +25,10 @@
 
 .text p:last-child {
   color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.text p:last-child:hover {
+  color: hsl(178, 100%, 50%);
 }

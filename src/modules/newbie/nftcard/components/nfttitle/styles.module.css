@@ -1,7 +1,13 @@
 .title {
   color: hsl(0, 0%, 100%);
+  cursor: pointer;
   font-family: Outfit, sans-serif;
   font-size: 2.4rem;
   font-weight: 600;
   padding-top: 2rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.title:hover {
+  color: hsl(178, 100%, 50%);
 }
