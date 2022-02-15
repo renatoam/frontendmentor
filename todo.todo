@@ -12,8 +12,8 @@ State:
   ☐ to use context + compound components to hold local state
 
 Testing:
-  ☐ to configure jest and ts-jest
-  ☐ to configure react-testing-library
+  ✔ to configure jest and ts-jest @done(22-02-15 06:38)
+  ✔ to configure react-testing-library @done(22-02-15 06:38)
   ☐ to configure cypress
 
 Translation:
