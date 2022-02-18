@@ -1,0 +1,12 @@
+.wrapper {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 2rem;
+  overflow: hidden;
+  width: clamp(250px, 60%, 300px);
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    width: clamp(250px, 50%, 300px);
+  }
+}
