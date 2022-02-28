@@ -8,6 +8,7 @@ export default function OrderSummaryImage() {
         src="/images/illustration-hero.svg"
         layout="fill"
         alt="Order Summary"
+        objectFit="cover"
       />
     </figure>
   );

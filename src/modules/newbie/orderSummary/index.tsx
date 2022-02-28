@@ -8,8 +8,8 @@ export default function OrderSummary() {
         <OS.Title />
         <OS.Text />
         <OS.Plans />
-        <OS.Payment />
-        <OS.Cancel />
+        <OS.Payment>Proceed to Payment</OS.Payment>
+        <OS.Cancel variant="secondary">Cancel Order</OS.Cancel>
       </OS.Content>
     </OS>
   );

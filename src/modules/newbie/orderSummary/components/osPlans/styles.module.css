@@ -1,0 +1,31 @@
+.wrapper {
+  align-items: center;
+  display: flex;
+  font-family: "Red Hat Display", sans-serif;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+}
+
+.image {
+  height: 4rem;
+  position: relative;
+  width: 4rem;
+}
+
+.plan h2 {
+  color: hsl(223, 47%, 23%);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.plan p {
+  color: hsl(224, 23%, 55%);
+  font-size: 1.6rem;
+}
+
+.actions p {
+  color: hsl(245, 75%, 52%);
+  cursor: pointer;
+  font-size: 1.6rem;
+  text-decoration: underline;
+}

@@ -1,0 +1,24 @@
+.button {
+  align-items: center;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: flex;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.6rem;
+  height: 4rem;
+  justify-content: center;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.primary {
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 0 0.5rem 0.5rem 0.3rem hsl(245deg 75% 52% / 20%);
+  color: hsl(225, 100%, 98%);
+}
+
+.secondary {
+  background-color: transparent;
+  color: hsl(245, 75%, 52%);
+}

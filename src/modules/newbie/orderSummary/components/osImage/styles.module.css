@@ -1,5 +1,9 @@
 .image {
-  height: 12rem;
+  height: clamp(1rem, 40vw, 20rem);
   position: relative;
   width: 100%;
+}
+
+.image img {
+  object-fit: cover;
 }

@@ -1,0 +1,7 @@
+.text {
+  color: hsl(224, 23%, 55%);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+}
