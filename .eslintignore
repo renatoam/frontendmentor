@@ -1,2 +1,5 @@
 .eslintrc.js
 jest.config.js
+plopfile.js
+plopfile.ts
+plop-templates/*.hbs
