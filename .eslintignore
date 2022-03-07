@@ -2,3 +2,5 @@
 jest.config.js
 plopfile.*
 plop-*
+src/stories
+.storybook

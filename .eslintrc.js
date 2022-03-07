@@ -8,15 +8,16 @@ module.exports = {
     "plugin:jest/style",
     "plugin:testing-library/react",
     "next/core-web-vitals",
+    "plugin:storybook/recommended"
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     project: "tsconfig.json",
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
     ecmaVersion: "latest",
-    sourceType: "module",
+    sourceType: "module"
   },
-  rules: {},
+  rules: {}
 };

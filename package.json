@@ -14,7 +14,9 @@
     "test": "jest",
     "test:ci": "jest --coverage --silent --ci",
     "prepare": "husky install",
-    "plop": "plop"
+    "plop": "plop",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",
@@ -29,8 +31,15 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.5",
     "@commitlint/cli": "^16.1.0",
     "@commitlint/config-conventional": "^16.0.0",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/react": "^6.4.19",
+    "@storybook/testing-library": "^0.0.9",
     "@testing-library/dom": "^8.11.3",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
@@ -41,10 +50,12 @@
     "@types/uuid": "^8.3.4",
     "@typescript-eslint/eslint-plugin": "^5.10.2",
     "@typescript-eslint/parser": "^5.10.2",
+    "babel-loader": "^8.2.3",
     "eslint": "8.8.0",
     "eslint-config-next": "12.0.10",
     "eslint-plugin-jest": "^26.0.0",
     "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-storybook": "^0.5.7",
     "eslint-plugin-testing-library": "^5.0.5",
     "husky": "^7.0.4",
     "jest": "^27.5.0",
