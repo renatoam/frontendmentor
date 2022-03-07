@@ -32,10 +32,18 @@ const addComponentTestFileAction = {
   skipIfExists: true
 }
 
+const addComponentStoriesFileAction = {
+  type: "add",
+  path: "src/common/components/{{lowerCase category}}/{{lowerCase name}}/index.stories.tsx",
+  templateFile: "plop-templates/simpleComponent.stories.ts.hbs",
+  skipIfExists: true
+}
+
 module.exports = {
   componentNameQuestion,
   componentCategoryQuestion,
   addComponentMainFileAction,
   addComponentStyleFileAction,
-  addComponentTestFileAction
+  addComponentTestFileAction,
+  addComponentStoriesFileAction
 }

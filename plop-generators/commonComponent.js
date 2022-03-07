@@ -3,7 +3,8 @@ const {
   componentCategoryQuestion,
   addComponentMainFileAction,
   addComponentStyleFileAction,
-  addComponentTestFileAction
+  addComponentTestFileAction,
+  addComponentStoriesFileAction
 } = require('./settings/commonComponentSettings')
 
 module.exports = function (plop) {
@@ -18,7 +19,8 @@ module.exports = function (plop) {
       // array of actions
       addComponentMainFileAction,
       addComponentStyleFileAction,
-      addComponentTestFileAction
+      addComponentTestFileAction,
+      addComponentStoriesFileAction
     ],
   });
 }

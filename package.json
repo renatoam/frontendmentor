@@ -15,8 +15,8 @@
     "test:ci": "jest --coverage --silent --ci",
     "prepare": "husky install",
     "plop": "plop",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "sb": "start-storybook -p 6006",
+    "build:sb": "build-storybook"
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",
