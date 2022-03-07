@@ -21,8 +21,21 @@ const addComponentMainFileAction = {
 const addComponentStyleFileAction = {
   type: "add",
   path: "src/common/components/{{lowerCase category}}/{{lowerCase name}}/styles.module.css",
-  templateFile: "plop-templates/simpleComponentStyle.css.hbs",
+  templateFile: "plop-templates/simpleComponent.css.hbs",
   skipIfExists: true
 };
 
-module.exports = { componentNameQuestion, componentCategoryQuestion, addComponentMainFileAction, addComponentStyleFileAction }
+const addComponentTestFileAction = {
+  type: "add",
+  path: "src/common/components/{{lowerCase category}}/{{lowerCase name}}/index.test.ts",
+  templateFile: "plop-templates/simpleComponent.test.ts.hbs",
+  skipIfExists: true
+}
+
+module.exports = {
+  componentNameQuestion,
+  componentCategoryQuestion,
+  addComponentMainFileAction,
+  addComponentStyleFileAction,
+  addComponentTestFileAction
+}

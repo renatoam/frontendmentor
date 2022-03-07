@@ -1,4 +1,10 @@
-const { componentNameQuestion, componentCategoryQuestion, addComponentMainFileAction, addComponentStyleFileAction } = require('./settings/commonComponentSettings')
+const {
+  componentNameQuestion,
+  componentCategoryQuestion,
+  addComponentMainFileAction,
+  addComponentStyleFileAction,
+  addComponentTestFileAction
+} = require('./settings/commonComponentSettings')
 
 module.exports = function (plop) {
   plop.setGenerator("common component", {
@@ -11,7 +17,8 @@ module.exports = function (plop) {
     actions: [
       // array of actions
       addComponentMainFileAction,
-      addComponentStyleFileAction
+      addComponentStyleFileAction,
+      addComponentTestFileAction
     ],
   });
 }
