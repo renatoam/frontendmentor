@@ -16,9 +16,20 @@
   background-color: hsl(245, 75%, 52%);
   box-shadow: 0 0.5rem 0.5rem 0.3rem hsl(245deg 75% 52% / 20%);
   color: hsl(225, 100%, 98%);
+  transition: all 0.4s ease-in-out;
+}
+
+.primary:hover {
+  background-color: hsl(224, 23%, 55%);
 }
 
 .secondary {
   background-color: transparent;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  transition: all 0.4s ease-in-out;
+}
+
+.secondary:hover {
   color: hsl(245, 75%, 52%);
 }

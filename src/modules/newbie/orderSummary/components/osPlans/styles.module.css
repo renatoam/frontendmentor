@@ -28,4 +28,9 @@
   cursor: pointer;
   font-size: 1.6rem;
   text-decoration: underline;
+  transition: all 0.4s ease-in-out;
+}
+
+.actions p:hover {
+  color: hsl(224, 23%, 55%);
 }
