@@ -1,6 +1,47 @@
-.divider {
+.simple {
   background-color: hsl(215, 32%, 27%);
   height: 1px;
   margin: 1rem 0;
   width: 100%;
+}
+
+.custom {
+  background-color: hsl(193deg 38% 86% / 50%);
+  height: .05rem;
+  margin: 1rem 0;
+  position: relative;
+  width: 100%;
+}
+
+.custom > span {
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 100%;
+  height: 3rem;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 3rem;
+}
+
+.custom::before,
+.custom::after {
+  background-color: hsl(193, 38%, 86%);
+  content: '';
+  border-radius: .4rem;
+  display: block;
+  height: 1rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: .4rem;
+  z-index: 1;
+}
+
+.custom::before {
+  left: 49%;
+}
+
+.custom::after {
+  left: 51%;
 }

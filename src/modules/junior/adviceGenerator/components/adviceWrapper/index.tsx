@@ -1,5 +1,6 @@
 import { ChildrenType } from "../../../../../common/types/reactTypes";
+import styles from './styles.module.scss'
 
 export default function AdviceWrapper({ children }: ChildrenType) {
-  return <section>{children}</section>;
+  return <section className={styles.wrapper}>{children}</section>;
 }

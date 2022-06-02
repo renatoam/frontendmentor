@@ -1,3 +1,6 @@
-export default function AdviceTitle() {
-  return <h2>Advice Title</h2>;
+import { ChildrenType } from '../../../../../common/types/reactTypes';
+import styles from './styles.module.scss'
+
+export default function AdviceTitle({ children }: ChildrenType) {
+  return <h1 className={styles.title}>{children}</h1>;
 }
