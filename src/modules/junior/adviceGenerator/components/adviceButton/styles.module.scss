@@ -1,0 +1,19 @@
+.shuffle {
+  background-color: hsl(150, 100%, 66%);
+  border: none;
+  border-radius: 100%;
+  bottom: -25%;
+  cursor: pointer;
+  display: grid;
+  height: 7rem;
+  left: 50%;
+  place-content: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease-in-out;
+  width: 7rem;
+
+  &:hover {
+    box-shadow: 0 0 1rem 1rem hsl(150, 100%, 66%);
+  }
+}
