@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { ChildrenType } from '../../../../../common/types/reactTypes';
+import Shimmer from '../../../../../common/components/atoms/shimmer';
 import styles from './styles.module.scss'
 
 interface AdviceTextProps {
@@ -10,7 +10,16 @@ interface AdviceTextProps {
 export default function AdviceText(props: AdviceTextProps) {
   const { isLoading = true, children } = props
 
-  if (true) return <div className={styles.shimmer} />
+  if (isLoading) {
+    return (
+      <Shimmer
+        count={2}
+        flexDirection="column"
+        variant="text"
+        align='center'
+      />
+    )
+  }
 
   return <p className={styles.quote}>{children}</p>;
 }
