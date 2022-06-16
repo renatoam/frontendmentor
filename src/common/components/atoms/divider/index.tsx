@@ -1,12 +1,19 @@
-import { ReactNode } from "react";
+import { DetailedHTMLProps, HTMLAttributes } from "react";
 import styles from "./styles.module.css";
 
-interface DividerProps {
+interface DividerProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
   variant?: "simple" | "custom";
 }
 
 export default function Divider(props: DividerProps) {
-  const { variant = 'simple' } = props;
+  const { variant = 'simple', className, ...rest } = props;
 
-  return <div className={styles[variant]}>{variant === 'custom' && <span />}</div>
+  return (
+    <div
+      className={`${styles[variant]} ${className}`}
+      {...rest}
+    >
+      {variant === 'custom' && <span />}
+    </div>
+  )
 }
