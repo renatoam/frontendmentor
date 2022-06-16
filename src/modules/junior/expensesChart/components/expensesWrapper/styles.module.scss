@@ -1,0 +1,112 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-height: 80rem;
+  min-width: 30rem;
+  width: 100%;
+}
+
+.header {
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  min-height: 10rem;
+  overflow: hidden;
+  padding: 2rem;
+  width: 100%;
+}
+
+.balance {
+  display: grid;
+  gap: 1rem;
+
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+}
+
+.expenses {
+  background-color: hsl(33, 100%, 98%);
+  border-radius: 1rem;
+  color: hsl(25, 47%, 15%);
+  padding: 2rem;
+
+  > h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+
+  h2 {
+    color: hsl(28, 10%, 53%);
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  p {
+    font-weight: 600;
+
+    &.current {
+      font-size: 3.5rem;
+    }
+
+    &.profit {
+      font-size: 2rem;
+    }
+  }
+  
+  .last {
+    display: grid;
+    text-align: right;
+  }
+}
+
+.divider {
+  background-color: hsl(27, 66%, 92%);
+  margin: 3rem 0;
+}
+
+.chart {
+  align-items: stretch;
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 20rem;
+  width: 100%;
+}
+
+.column {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.bar {
+  background-color: hsl(10, 79%, 65%);
+  border-radius: .2rem;
+  width: 3rem;
+
+  &.today {
+    background-color: hsl(186, 34%, 60%);
+  }
+}
