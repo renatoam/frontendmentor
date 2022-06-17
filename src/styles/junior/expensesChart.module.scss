@@ -2,6 +2,11 @@
   background-color: hsl(27, 66%, 92%);
   display: grid;
   height: 100vh;
+  padding: 2rem;
   place-content: center;
   width: 100vw;
+
+  *:is(h1, h2, h3, p, span) {
+    font-family: 'DM Sans', sans-serif;
+  }
 }
