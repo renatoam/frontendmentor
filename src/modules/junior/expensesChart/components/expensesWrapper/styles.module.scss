@@ -1,3 +1,11 @@
+$softred: hsl(10, 79%, 65%);
+$transition: all 0.6s ease-in-out;
+$cyan: hsl(186, 34%, 60%);
+$verypaleorange: hsl(33, 100%, 98%);
+$darkbrown: hsl(25, 47%, 15%);
+$mediumbrown: hsl(28, 10%, 53%);
+$cream: hsl(27, 66%, 92%);
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -8,7 +16,7 @@
 }
 
 .header {
-  background-color: hsl(10, 79%, 65%);
+  background-color: $softred;
   border-radius: 1rem;
   display: flex;
   justify-content: space-between;
@@ -39,9 +47,9 @@
 }
 
 .expenses {
-  background-color: hsl(33, 100%, 98%);
+  background-color: $verypaleorange;
   border-radius: 1rem;
-  color: hsl(25, 47%, 15%);
+  color: $darkbrown;
   padding: 2rem;
 
   > h2 {
@@ -55,7 +63,7 @@
   justify-content: space-between;
 
   h2 {
-    color: hsl(28, 10%, 53%);
+    color: $mediumbrown;
     font-size: clamp(1.3rem, 3.8vw, 2rem);
     font-weight: 400;
   }
@@ -79,7 +87,7 @@
 }
 
 .divider {
-  background-color: hsl(27, 66%, 92%);
+  background-color: $cream;
   margin: 3rem 0;
 }
 
@@ -93,24 +101,53 @@
 
 .column {
   align-items: center;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
 .bar {
-  background-color: hsl(10, 79%, 65%);
+  background-color: $softred;
   border-radius: .2rem;
+  position: relative;
+  transition: $transition;
   width: 3rem;
 
   &.today {
-    background-color: hsl(186, 34%, 60%);
+    background-color: $cyan;
+  }
+
+  &:hover {
+    background-color: lighten($color: $softred, $amount: 9);
+
+    &.today {
+      background-color: lighten($color: $cyan, $amount: 9);
+    }
+
+    .tooltip {
+      opacity: 1;
+    }
   }
 }
 
 .day {
-  color: hsl(28, 10%, 53%);
+  color: $mediumbrown;
   display: block;
   font-size: 1.2rem;
   padding-top: 1rem;
+}
+
+.tooltip {
+  background-color: $darkbrown;
+  border-radius: .5rem;
+  color: $verypaleorange;
+  font-size: 1rem;
+  left: 50%;
+  opacity: 0;
+  padding: .5rem;
+  position: absolute;
+  top: -1.5rem;
+  transform: translate(-50%, -50%);
+  transition: $transition;
 }

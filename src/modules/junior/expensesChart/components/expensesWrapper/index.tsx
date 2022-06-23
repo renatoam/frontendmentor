@@ -65,7 +65,9 @@ export default function ExpensesWrapper() {
                 <div
                   className={`${styles.bar} ${todayClassName}`}
                   style={{ height: `${expense.amount + INCREASE_SIZE_BY}%` }}
-                />
+                >
+                  <span className={styles.tooltip}>${expense.amount}</span>
+                </div>
                 <span className={styles.day}>{expense.day}</span>
               </section>
             )
